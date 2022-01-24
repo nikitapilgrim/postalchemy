@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #16141A;
+}
+
+#root {
+  overflow: auto;
+  padding: 0px;
+}
+canvas {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  user-select: none;
+}
+
+body {
+  position: fixed;
+  overflow: hidden;
+  overscroll-behavior-y: none;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  color: black;
+  background: white;
+}
+
+/* Older browsers */
+html { font-size: 12px; }
+
+/* Modern browsers only need this one */
+
+@media screen and (min-width: 20em){
+  html { font-size: calc( 12px + (20 - 14) * (100vw - 400px) / (800 - 400) ); }
+}
+
+/* Safari <8 and IE <11 */
+@media screen and (min-width: 20em){
+  html { font-size: calc( 12px + (20 - 14) * (100vw - 400px) / (800 - 400) ); }
+}
+@media screen and (min-width: 50em){
+  html { font-size: calc( 12px + (20 - 14) * (100vw - 400px) / (800 - 400) ); }
+}
+
+@font-face {
+  font-family: 'Auldroon';
+  src: local('Auldroon'),
+  url('./components/Alchemy/assets/fonts/Auldroon.woff2') format('woff2'),
+  url('./components/Alchemy/assets/fonts/Auldroon.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
